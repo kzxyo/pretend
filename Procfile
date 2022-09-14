@@ -1,1 +1,1 @@
-Worker: node .
+Worker: npm install
