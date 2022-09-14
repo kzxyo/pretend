@@ -302,6 +302,7 @@ message.reply({embeds: [uptimeEmbed]});
   if (message.content === `${prefix}help`) {
             const embed = new Discord.MessageEmbed()
                 .setAuthor(message.author.username, message.author.avatarURL({ dynamic: true }))
+                .setThumbnail('https://cdn.discordapp.com/avatars/1017895318664265728/3fd07ccbb416816c89b48706aa78b3f3.webp?size=1024')
               .addFields(
                 { name: '**Help**', value: 'Use the dropdown menu below for the commands' },
                 { name: '**Support**', value: `If you need further support make sure to join the **[Support Server](https://discord.gg/fancy)**` },
@@ -381,19 +382,19 @@ message.reply({embeds: [uptimeEmbed]});
     const embed1 = new Discord.MessageEmbed()
       .setAuthor(`Module: Information`, message.author.displayAvatarURL({dynamic:true}))
       .setDescription(`\`ping, uptime, support, invite, guildcount, prefix, owners\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
       
     const embed2 = new Discord.MessageEmbed()
       .setAuthor(`Module: Utility`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`avatar, serverinfo, membercount, boostscount, guildicon, guildbanner, userinfo, embed, poll, firstmessage, afk, downloademoji, cryptocurrency, emojilist, serverstats, getbotinvite\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
 
     const embed3 = new Discord.MessageEmbed()
       .setAuthor(`Module: Moderation`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`ban, unban, kick, purge, lock, unlock, role\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
 
 
@@ -401,31 +402,31 @@ message.reply({embeds: [uptimeEmbed]});
       .setAuthor(`Module: Configuration`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`setguildicon, setguildname, setguildbanner, setnickname, setbotnickname, emoji, imgaddemoji, addmultiple, setautorole, deleteautorole, autorole list, setpingonjoin, deletepingonjoin,
 pingonjoin list, setjoindm, deletejoindm, joindm message, setautoresponder, deleteautoresponder\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
 
     const embed6 = new Discord.MessageEmbed()
       .setAuthor(`Module: Welcome setup`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`setwelcomechannel, setwelcomecolor, setwelcometitle, setwelcomedescription, setwelcomethumbnail, setwelcomeimage, setwelcomefooter, setwelcomemessage, testwelcome, welcome variables, deletewelcome, help welcome, setplainwelcome, setwelcomeplainchannel, testplainwelcome, deleteplainwelcome\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
       
     const embed7 = new Discord.MessageEmbed()
       .setAuthor(`Module: Boost message setup`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`setboostchannel, setboosttitle, setboostdescription, setboostcolor, setboostthumbnail, setboostimage, setboostfooter, testboost, help boost, boost variables\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
 
     const embed8 = new Discord.MessageEmbed()
       .setAuthor(`Module: Fun`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`gay, ship, 8ball, cat, dog, say, iq, meme, truth, dare, advice, hot, translate, search, tts, ben\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
 
     const embed9 = new Discord.MessageEmbed()
       .setAuthor(`Module: Roleplay`, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`\`hug, kiss, pat, cuddle, slap, kill, cry, eat, dance, laugh\``)
-      .setFooter(`© each | 106 commands`)
+      .setFooter(`© raid | 106 commands`)
       .setColor('BLACK')
     const collector = message.channel.createMessageComponentCollector({
       componentType: "SELECT_MENU"
