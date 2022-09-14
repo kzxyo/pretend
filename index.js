@@ -243,7 +243,7 @@ client.on("message", async(message)=>{
   if(!prefix) prefix = ","
      if (message.content === `${prefix}ping`) {
       function doMagic8BallVoodoo() {
-        var rand = [`**Elon Musk's spaceship**`, `**Putin's nuclear bomb**`, `**ap1q on tiktok**`, `**Mcdonalds's wifi**`, '**the chinese government**', '**your mom**', '**your dad**', '**some bitches**', '**north korea**', '**hot asian woman around your area**', '**webhost**', `**map's luck**`];
+        var rand = [`**Elon Musk's spaceship**`, `**Putin's nuclear bomb**`, `**ap1q on tiktok**`, `**Mcdonalds's wifi**`, '**the chinese government**', '**your mom**', '**your dad**', '**some bitches**', '**north korea**', '**hot asian woman around your area**', '**webhost**', `**wintrs's luck**`];
     
         return rand[Math.floor(Math.random()*rand.length)];
     }
@@ -468,7 +468,8 @@ pingonjoin list, setjoindm, deletejoindm, joindm message, setautoresponder, dele
                 
                 .setTitle('Owners')
 
-              .setDescription(`**[fancy#0001](https://discord.com/users/968269401767940207) - Bot developer**`)
+              .setDescription(`**[wintrs#2000](https://discord.com/users/605366345902587921) - Bot developer**
+              **[terrify#0001](https://discord.com/users/968269401767940207) - Bot helper**`)
                 .setFooter(`${client.user.username}`)
                 .setColor(`BLACK`)
                 .setTimestamp(Date.now());
@@ -545,10 +546,10 @@ pingonjoin list, setjoindm, deletejoindm, joindm message, setautoresponder, dele
           .setDescription(`Adds a role to an user or removes a role from an user
 **Example:**
 
-${prefix}role+ @Remain#1000 staff or ${prefix}role+ 9406255905942037090 staff
+${prefix}role+ @wintrs#2000 staff or ${prefix}role+ 605366345902587921 staff
 (adds role to user)
 
-${prefix}role- @Remain#1000 special or ${prefix}role- 940625590594203709 special
+${prefix}role- @wintrs#2000 special or ${prefix}role- 605366345902587921 special
 (removes role from user)
 
 Aliases: \`roleadd\`, \`roleremove\`, \`rolermv\``)
@@ -1397,27 +1398,27 @@ GROWTH
 */
 if (message.content === `${prefix}invite`|| message.content === `${prefix}support`) {
 
-    const embed = new Discord.MessageEmbed()
-      .setTitle(' ')
-      .setColor("BLACK")
-      .setDescription(`
+  const embed = new Discord.MessageEmbed()
+    .setTitle(' ')
+    .setColor("BLACK")
+    .setDescription(`
 >  **Type** \`${prefix}help\` **for more commands. Join the support server [Support](https://discord.gg/kN4JKK2nCM)**`)
-                .setFooter(
-                    `requested by ${message.author.username}`,
-                    message.author.displayAvatarURL({
-                        dynamic: true
-                    })
-                )
-            .setTimestamp(Date.now())
-      .setColor('BLACK')
-  const row = new MessageActionRow().addComponents(
-    new MessageButton()
-      .setLabel("Invite Link")
-      .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`)
-      .setStyle('LINK'),
-  )
-  message.reply({ embeds: [embed], components: [row] })
-  }
+              .setFooter(
+                  `requested by ${message.author.username}`,
+                  message.author.displayAvatarURL({
+                      dynamic: true
+                  })
+              )
+          .setTimestamp(Date.now())
+    .setColor('BLACK')
+const row = new MessageActionRow().addComponents(
+  new MessageButton()
+    .setLabel("Invite Link")
+    .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`)
+    .setStyle('LINK'),
+)
+message.reply({ embeds: [embed], components: [row] })
+}
   /* 
 
 
@@ -1731,9 +1732,9 @@ if(message.content === `${prefix}about`){
   const embed = new Discord.MessageEmbed()
     .setColor('BLACK')
     .setAuthor(`${client.user.username}`, client.user.displayAvatarURL())
-    .setDescription(`**<:icons_owner:1018868665321525258>  Developer: -->** **[rap#0001](https://discord.com/users/605366345902587921)** \n**<:Bug:1009380172895629332> Memory:** \`${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)}\`**MB**\n**<:icons_settings:1014300181803573288> Cmd Count: --> ** \`106\``)
+    .setDescription(`**<:icons_owner:1018868665321525258>  Developer: -->** **[wintrs#2000](https://discord.com/users/605366345902587921)** \n**<:Bug:1009380172895629332> Memory:** \`${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)}\`**MB**\n**<:icons_settings:1006151454505046056> Cmd Count: --> ** \`106\``)
     .addField('**<:icons_user:1018869289870176357>  Members:**', `${client.guilds.cache.reduce((current, guild) => current + guild.memberCount, 0).toLocaleString()}`, true)
-    .addField('**<:suffer_channel:1014301379071844362> Channels:**', `${client.channels.cache.size.toLocaleString()} Total`, true)
+    .addField('**<:suffer_channel:1006495811665940510> Channels:**', `${client.channels.cache.size.toLocaleString()} Total`, true)
     .addField('**<:icons_settings:1006151454505046056>  Guilds: **', `${client.guilds.cache.size.toLocaleString()} `, true)
     .addField('**<:upvote:1012289701379584040>  Uptime: **', `${UptimeDays}${UptimeHours}${UptimeMinutes}${UptimeSeconds}`, true)
 
@@ -2067,11 +2068,11 @@ if(message.content === `${prefix}membercount` || message.content === `${prefix}m
           value: `> ${user.id}`,
         },
         {
-          name: "<:suffer_channel:1014301379071844362> Discriminator:",
+          name: "<:suffer_channel:1006495811665940510> Discriminator:",
           value: `> #${user.discriminator}`,
         },
         {
-          name: "<:icons_verified:1014299559020732507> Flags:",
+          name: "<:icons_verified:999050643828379829> Flags:",
           value: `> ${userFlags.length
               ? userFlags.map((flag) => flags[flag]).join(", ")
               : "None"
@@ -3452,9 +3453,9 @@ message.reply({embeds: [can]});
         .setColor(`BLACK`)
         .setTitle(`Welcome message variables`)
         .setDescription(`?server - shows server name 
-?tag shows member's full name - carti#8576
-?mention - mentions new user - @carti
-?user - shows new user username - carti
+?tag shows member's full name - wintrs#2000
+?mention - mentions new user - @wintrs
+?user - shows new user username - wintrs
 ?useravatar - shows user's avatar
 ?serveravatar - shows server's avatar
 ?rank - shows join position - 30th member
@@ -3468,9 +3469,9 @@ message.reply({embeds: [variables]});      }
         .addField(`Welcome embed commands`, `${prefix}setwelcomechannel - sets welcome channel (requieFF0000)\n${prefix}setwelcometitle - sets welcome message title\n${prefix}setwelcomecolor - sets welcome message color (can be an hex code or color name only, otherwise this module might have errors)\n${prefix}setwelcomedescription - sets welcome description (requieFF0000)\n${prefix}setwelcomethumbnail - sets welcome messsage thumbnail\n${prefix}setwelcomeimage - sets welcome message image\n${prefix}setwelcomefooter - sets welcome message footer\n${prefix}setwelcomemessage - sets normal welcome message above the embed\n${prefix}testwelcome - sends welcome message`)
         .addField(`Welcome plain commands`, `${prefix}setplainwelcome - sets message for plain welcome message\n${prefix}setwelcomeplainchannel - sets channel to send plain welcome message\n${prefix}testplainwelcome - sends plain welcome message\n${prefix}deleteplainwelcome - deletes plain welcome message`)
         .addField(`Welcome variables`, `?server - shows server name 
-?tag - shows member's full name - carti#8576
-?mention - mentions new user - @carti
-?user - shows new user username - carti
+?tag - shows member's full name - wintrs#2000
+?mention - mentions new user - @wintrs
+?user - shows new user username - wintrs
 ?useravatar - shows user's avatar
 ?serveravatar - shows server's avatar
 ?rank - shows join position - 30th member`)
@@ -3782,9 +3783,9 @@ if(!nail) tnail = " "
     .setColor(`BLACK`)
     .setTitle(`Boost message variables`)
     .setDescription(`?server - shows server name 
-?tag shows member's full name - Jakey#6003
-?mention - mentions new user - @Jakey
-?user - shows new user username - Jakey
+?tag shows member's full name - wintrs#2000
+?mention - mentions new user - @wintrs
+?user - shows new user username - wintrs
 ?useravatar - shows user's avatar
 ?serveravatar - shows server's avatar
 ?boostscount - shows number of boosts from the server - 10 boosts
@@ -3797,9 +3798,9 @@ message.reply({embeds: [variables]});  }
     .setColor(`BLACK`)
     .addField(`Boost embed commands`, `${prefix}setboostchannel - sets boost channel (requieFF0000)\n${prefix}setboosttitle - sets boost message title\n${prefix}setboostcolor - sets boost message color (can be an hex code or color name only, otherwise this module might have errors)\n${prefix}setboostdescription - sets boost description (requieFF0000)\n${prefix}setboostthumbnail - sets boost messsage thumbnail\n${prefix}setboostimage - sets boost message image\n${prefix}setboostfooter - sets boost message footer\n${prefix}testboost - sends boost message`)
     .addField(`Welcome variables`, `?server - shows server name 
-?tag shows member's full name - Jakey#6003
-?mention - mentions new user - @Jakey
-?user - shows new user username - Jakey
+?tag shows member's full name - wintrs#2000
+?mention - mentions new user - @wintrs
+?user - shows new user username - wintrs
 ?useravatar - shows user's avatar
 ?serveravatar - shows server's avatar
 ?boostscount - shows number of boosts from the server - 10 boosts`)
@@ -4430,7 +4431,7 @@ client.on("guildCreate", async(guild) => {
    .setTimestamp()
   await wrb.send({
     content: 'Joined a guild',
-    username: 'riot',
+    username: 'raid',
     avatarURL: 'https://cdn.discordapp.com/avatars/1017895318664265728/3fd07ccbb416816c89b48706aa78b3f3.webp?size=1024',
     embeds: [joinguild],
 
@@ -4453,7 +4454,7 @@ const owner2 = await guild.fetchOwner()
   .setTimestamp()
   await wrb.send({
     content: 'Left a guild',
-    username: 'riot',
+    username: 'raid',
     avatarURL: 'https://cdn.discordapp.com/avatars/1017895318664265728/3fd07ccbb416816c89b48706aa78b3f3.webp?size=1024',
     embeds: [leaveguild],
 
