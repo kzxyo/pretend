@@ -62,7 +62,6 @@ const http = require("http");
 const { banner_url } = require("discord-banner");
 const { VoiceChannel } = require("discord.js");
 const { id } = require("google-translate-api/languages");
-http.createServer((_, res) => res.end("alive")).listen(8080)
 
 client.on("ready", async (member) => {
 let matatactu = new Discord.MessageEmbed()
